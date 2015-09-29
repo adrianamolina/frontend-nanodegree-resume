@@ -4,12 +4,35 @@
 
 	// console.log (sentence);
 	// console.log (newSentence);
-
 	var formattedName = HTMLheaderName.replace ("%data%", "Adriana Molina");
 	var formattedRole = HTMLheaderRole.replace ("%data%", "Frontend");
+	var skills = ["lol" , "xd" , "juas"];
+	var bio = {
+		"name" : "Adriana" ,
+		"role" : "Frontend" ,
+		"contactInfo" : "adriana@blabla.com",
+		"pictureUrl" : "images/fry.jpg",
+		"welcomeMessage" : "Welcome to this page" ,
+		"skills" : skills
+	};
+	var work = {};
+	var education = {};
 
-	$("#header").append(formattedName);
-	$("#header").append(formattedRole);
+	work.currentPosition = "Touching balls";
+	work.employer = "Myself";
+	work.years = 2;
+	work.city = "World";
+
+	education ["lastSchool"] = "udacity";
+	education ["years"] = 1;
+	education ["schoolCity"] = "internet";
+
+	$("#main").prepend(bio.role);
+	$("#main").prepend(bio.name);
+	$("#main").append(bio.welcomeMessage, bio.contactInfo,
+		bio.pictureUrl, bio.skills);
+	$("#main").append(work["currentPosition"]);
+	$("#main").append(education.lastSchool);
 
 
 
