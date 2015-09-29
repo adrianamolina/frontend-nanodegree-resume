@@ -22,32 +22,6 @@
 	work.years = 2;
 	work.city = "World";
 
-	var education = {
-		"schools" : [
-			{
-				"school" : "Liceo",
-				"city" : "Marte",
-				"degree" : "Adulthood",
-				"years" : 12
-			},
-			{
-				"school" : "Complutense",
-				"city" : "Madrid",
-				"degree" : "Audiovisual",
-				"years" : 5
-			},
-			{
-				"school" : "Udacity",
-				"city" : "internet",
-				"degree" : "frontend",
-				"years" : 1
-			}
-		]
-	};
-
-
-
-
 	$("#main").prepend(bio.role);
 	$("#main").prepend(bio.name);
 	$("#main").append(bio.welcomeMessage, bio.contactInfo,
