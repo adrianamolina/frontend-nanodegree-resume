@@ -16,16 +16,37 @@
 		"skills" : skills
 	};
 	var work = {};
-	var education = {};
 
 	work.currentPosition = "Touching balls";
 	work.employer = "Myself";
 	work.years = 2;
 	work.city = "World";
 
-	education ["lastSchool"] = "udacity";
-	education ["years"] = 1;
-	education ["schoolCity"] = "internet";
+	var education = {
+		"schools" : [
+			{
+				"school" : "Liceo",
+				"city" : "Marte",
+				"degree" : "Adulthood",
+				"years" : 12
+			},
+			{
+				"school" : "Complutense",
+				"city" : "Madrid",
+				"degree" : "Audiovisual",
+				"years" : 5
+			},
+			{
+				"school" : "Udacity",
+				"city" : "internet",
+				"degree" : "frontend",
+				"years" : 1
+			}
+		]
+	};
+
+
+
 
 	$("#main").prepend(bio.role);
 	$("#main").prepend(bio.name);
