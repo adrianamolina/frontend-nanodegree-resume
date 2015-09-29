@@ -2,7 +2,8 @@
 var bio = {
 	"name" : "Adriana" ,
 	"role" : "Frontend" ,
-	"contactInfo" : "adriana@blabla.com"
+	"contactInfo" : "adriana@blabla.com",
+	"skills" : "nubes, arcoiris, caballo, pradera"
 };
 
 
