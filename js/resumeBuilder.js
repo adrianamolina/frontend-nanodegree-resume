@@ -3,7 +3,7 @@ var bio = {
 	"name" : "Adriana" ,
 	"role" : "Frontend" ,
 	"contactInfo" : "adriana@blabla.com",
-	"skills" : "nubes, arcoiris, caballo, pradera"
+	"skills" : ["nubes", "arcoiris", "caballo", "pradera"]
 };
 
 
@@ -76,3 +76,16 @@ var project = {
 		"exercises" : "resume"
 	}
 };
+
+if (bio.skills.length > 0) {
+	$("#header").append(HTMLskillsStart);
+
+	var formattedSkill = HTMLskills.replace ("%data%", bio.skills[0]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace ("%data%", bio.skills[1]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace ("%data%", bio.skills[2]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace ("%data%", bio.skills[3]);
+	$("#skills").append(formattedSkill);
+}
