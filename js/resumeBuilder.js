@@ -36,22 +36,42 @@ var work = {
 			"company" : "Avatar",
 			"city" : "Pandora",
 			"role" : "blue stuff",
-			"years" : 2
+			"years" : "2 years"
 		},
 		{
 			"company" : "The Martian",
 			"city" : "Mars",
 			"role" : "Explore",
-			"years" : 2
+			"years" : "2years"
 		},
 		{
 			"company" : "Nice",
 			"city" : "Nice World",
 			"role" : "being nice",
-			"years" : 2
+			"years" : "2 years"
 		}
 	]
 };
+
+for (w in work.experience) {
+	$("#workExperience").append(HTMLworkStart);
+	var formattedCompany = HTMLworkEmployer.replace ("%data%", 
+		work.experience[w].company);
+	var formattedRole = HTMLworkTitle.replace ("%data%", 
+		work.experience[w].role);
+	var formattedCompanyRole = formattedCompany + formattedRole;
+	$(".work-entry:last").append(formattedCompanyRole);
+
+	var formattedYears = HTMLworkDates.replace ("%data%", 
+		work.experience[w].years);
+	$(".work-entry:last").append(formattedYears);
+	var formattedLocation = HTMLworkLocation.replace ("%data%",
+		work.experience[w].city);
+	$(".work-entry:last").append(formattedLocation);
+	//$(".work-entry:last").append(formattedCompany);
+	//$(".work-entry:last").append(formattedRole);
+	
+}
 
 var project = {
 	"DIY" : [
