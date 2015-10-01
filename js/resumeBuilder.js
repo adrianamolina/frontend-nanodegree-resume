@@ -53,7 +53,8 @@ var work = {
 	]
 };
 
-for (w in work.experience) {
+function displayWork () {
+	for (w in work.experience) {
 	$("#workExperience").append(HTMLworkStart);
 	var formattedCompany = HTMLworkEmployer.replace ("%data%", 
 		work.experience[w].company);
@@ -70,7 +71,7 @@ for (w in work.experience) {
 	$(".work-entry:last").append(formattedLocation);
 	//$(".work-entry:last").append(formattedCompany);
 	//$(".work-entry:last").append(formattedRole);
-	
+	}
 }
 
 var project = {
