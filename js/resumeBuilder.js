@@ -36,19 +36,19 @@ var work = {
 			"company" : "Avatar",
 			"city" : "Pandora",
 			"role" : "blue stuff",
-			"years" : "2 years"
+			"years" : "January - - - July 2006"
 		},
 		{
 			"company" : "The Martian",
 			"city" : "Mars",
 			"role" : "Explore",
-			"years" : "2years"
+			"years" : "July 2006 - - - July 2008"
 		},
 		{
 			"company" : "Nice",
 			"city" : "Nice World",
 			"role" : "being nice",
-			"years" : "2 years"
+			"years" : "July 2009 - - - july 2011"
 		}
 	]
 };
@@ -73,6 +73,8 @@ function displayWork () {
 	//$(".work-entry:last").append(formattedRole);
 	}
 }
+
+displayWork();
 
 var project = {
 	"DIY" : [
