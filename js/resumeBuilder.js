@@ -51,52 +51,22 @@ var work = {
 			"company" : "Avatar",
 			"city" : "Pandora",
 			"role" : "blue stuff",
-			"years" : "January - - - July 2006"
-			"description" : "Lorem ipsum dolor sit amet, consectetur 
-	adipiscing elit. Cras feugiat eget elit at viverra. Pellentesque 
-	non mi facilisis, luctus purus sed, gravida quam. Mauris vel 
-	tortor pharetra, facilisis ante ut, venenatis eros. Integer et 
-	ante at velit sollicitudin dictum ac sed lorem. Nullam tincidunt 
-	acus id tellus pulvinar, sit amet tincidunt sem elementum. 
-	Aenean ut commodo nunc, blandit iaculis diam. Quisque ullamcorper 
-	llamcorper dui ac scelerisque. Suspendisse eget dignissim ligula, 
-	non accumsan leo. Nullam volutpat velit vitae ultricies tempus. 
-	Pellentesque vehicula arcu sed nulla mattis, nec blandit ligula 
-	suscipit."
+			"years" : "January - - - July 2006",
+			"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat eget elit at viverra. Pellentesque non mi facilisis, luctus purus sed, gravida quam. Mauris vel tortor pharetra, facilisis ante ut, venenatis eros. Integer et ante at velit sollicitudin dictum ac sed lorem. Nullam tincidunt lacus id tellus pulvinar, sit amet tincidunt sem elementum. Aenean ut commodo nunc, blandit iaculis diam. Quisque ullamcorper ullamcorper dui ac scelerisque. Suspendisse eget dignissim ligula, non accumsan leo. Nullam volutpat velit vitae ultricies tempus. Pellentesque vehicula arcu sed nulla mattis, nec blandit ligula suscipit. Sed et metus eget augue auctor aliquet. Nullam faucibus lorem finibus risus accumsan mollis vitae ac nibh. Curabitur tincidunt lectus a mi tempor, non ultricies nisi imperdiet. Maecenas accumsan sapien vel metus mattis tincidunt. Quisque a arcu sollicitudin, pellentesque metus in, interdum sapien."
 		},
 		{
 			"company" : "The Martian",
 			"city" : "Mars",
 			"role" : "Explore",
-			"years" : "July 2006 - - - July 2008"
-			"description" : "Lorem ipsum dolor sit amet, consectetur 
-	adipiscing elit. Cras feugiat eget elit at viverra. Pellentesque 
-	non mi facilisis, luctus purus sed, gravida quam. Mauris vel 
-	tortor pharetra, facilisis ante ut, venenatis eros. Integer et 
-	ante at velit sollicitudin dictum ac sed lorem. Nullam tincidunt 
-	acus id tellus pulvinar, sit amet tincidunt sem elementum. 
-	Aenean ut commodo nunc, blandit iaculis diam. Quisque ullamcorper 
-	llamcorper dui ac scelerisque. Suspendisse eget dignissim ligula, 
-	non accumsan leo. Nullam volutpat velit vitae ultricies tempus. 
-	Pellentesque vehicula arcu sed nulla mattis, nec blandit ligula 
-	suscipit."
+			"years" : "July 2006 - - - July 2008",
+			"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat eget elit at viverra. Pellentesque non mi facilisis, luctus purus sed, gravida quam. Mauris vel tortor pharetra, facilisis ante ut, venenatis eros. Integer et ante at velit sollicitudin dictum ac sed lorem. Nullam tincidunt lacus id tellus pulvinar, sit amet tincidunt sem elementum. Aenean ut commodo nunc, blandit iaculis diam. Quisque ullamcorper ullamcorper dui ac scelerisque. Suspendisse eget dignissim ligula, non accumsan leo. Nullam volutpat velit vitae ultricies tempus. Pellentesque vehicula arcu sed nulla mattis, nec blandit ligula suscipit. Sed et metus eget augue auctor aliquet. Nullam faucibus lorem finibus risus accumsan mollis vitae ac nibh. Curabitur tincidunt lectus a mi tempor, non ultricies nisi imperdiet. Maecenas accumsan sapien vel metus mattis tincidunt. Quisque a arcu sollicitudin, pellentesque metus in, interdum sapien."
 		},
 		{
 			"company" : "Nice",
 			"city" : "Nice World",
 			"role" : "being nice",
-			"years" : "July 2009 - - - july 2011"
-			"description" : "Lorem ipsum dolor sit amet, consectetur 
-	adipiscing elit. Cras feugiat eget elit at viverra. Pellentesque 
-	non mi facilisis, luctus purus sed, gravida quam. Mauris vel 
-	tortor pharetra, facilisis ante ut, venenatis eros. Integer et 
-	ante at velit sollicitudin dictum ac sed lorem. Nullam tincidunt 
-	acus id tellus pulvinar, sit amet tincidunt sem elementum. 
-	Aenean ut commodo nunc, blandit iaculis diam. Quisque ullamcorper 
-	llamcorper dui ac scelerisque. Suspendisse eget dignissim ligula, 
-	non accumsan leo. Nullam volutpat velit vitae ultricies tempus. 
-	Pellentesque vehicula arcu sed nulla mattis, nec blandit ligula 
-	suscipit."
+			"years" : "July 2009 - - - july 2011",
+			"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat eget elit at viverra. Pellentesque non mi facilisis, luctus purus sed, gravida quam. Mauris vel tortor pharetra, facilisis ante ut, venenatis eros. Integer et ante at velit sollicitudin dictum ac sed lorem. Nullam tincidunt lacus id tellus pulvinar, sit amet tincidunt sem elementum. Aenean ut commodo nunc, blandit iaculis diam. Quisque ullamcorper ullamcorper dui ac scelerisque. Suspendisse eget dignissim ligula, non accumsan leo. Nullam volutpat velit vitae ultricies tempus. Pellentesque vehicula arcu sed nulla mattis, nec blandit ligula suscipit. Sed et metus eget augue auctor aliquet. Nullam faucibus lorem finibus risus accumsan mollis vitae ac nibh. Curabitur tincidunt lectus a mi tempor, non ultricies nisi imperdiet. Maecenas accumsan sapien vel metus mattis tincidunt. Quisque a arcu sollicitudin, pellentesque metus in, interdum sapien."
 		}
 	]
 };
@@ -117,6 +87,9 @@ function displayWork () {
 	var formattedLocation = HTMLworkLocation.replace ("%data%",
 		work.experience[w].city);
 	$(".work-entry:last").append(formattedLocation);
+	var formattedDescription = HTMLworkDescription.replace ("%data%",
+		work.experience[w].desc);
+	$(".work-entry:last").append(formattedDescription);
 	//$(".work-entry:last").append(formattedCompany);
 	//$(".work-entry:last").append(formattedRole);
 	}
@@ -124,7 +97,7 @@ function displayWork () {
 
 displayWork();
 
-var project = {
+var projects = {
 	"DIY" : [
 		{	
 			"objects" : "bags",
@@ -148,6 +121,22 @@ var project = {
 	}
 };
 
+projects.display = function () {
+	for(p in projects.DIY) {
+		$("#projects").append(HTMLprojectStart);
+		var formattedTitle = HTMLprojectTitle.replace ("%data%", 
+			projects.DIY[p].objects);
+		$(".project-entry:last").append(formattedTitle);
+		var formattedDates = HTMLprojectDates.replace ("%data%",
+			projects.DIY[p].materials);
+		$(".project-entry:last").append(formattedDates);
+		var formattedDescription = HTMLprojectDescription.replace 
+			("%data%", projects.DIY[p].tools);
+		$(".project-entry:last").append(formattedDescription);
+	}
+}
+projects.display();
+
 if (bio.skills.length > 0) {
 	$("#header").append(HTMLskillsStart);
 
@@ -160,3 +149,5 @@ if (bio.skills.length > 0) {
 	formattedSkill = HTMLskills.replace ("%data%", bio.skills[3]);
 	$("#skills").append(formattedSkill);
 }
+
+
