@@ -52,18 +52,51 @@ var work = {
 			"city" : "Pandora",
 			"role" : "blue stuff",
 			"years" : "January - - - July 2006"
+			"description" : "Lorem ipsum dolor sit amet, consectetur 
+	adipiscing elit. Cras feugiat eget elit at viverra. Pellentesque 
+	non mi facilisis, luctus purus sed, gravida quam. Mauris vel 
+	tortor pharetra, facilisis ante ut, venenatis eros. Integer et 
+	ante at velit sollicitudin dictum ac sed lorem. Nullam tincidunt 
+	acus id tellus pulvinar, sit amet tincidunt sem elementum. 
+	Aenean ut commodo nunc, blandit iaculis diam. Quisque ullamcorper 
+	llamcorper dui ac scelerisque. Suspendisse eget dignissim ligula, 
+	non accumsan leo. Nullam volutpat velit vitae ultricies tempus. 
+	Pellentesque vehicula arcu sed nulla mattis, nec blandit ligula 
+	suscipit."
 		},
 		{
 			"company" : "The Martian",
 			"city" : "Mars",
 			"role" : "Explore",
 			"years" : "July 2006 - - - July 2008"
+			"description" : "Lorem ipsum dolor sit amet, consectetur 
+	adipiscing elit. Cras feugiat eget elit at viverra. Pellentesque 
+	non mi facilisis, luctus purus sed, gravida quam. Mauris vel 
+	tortor pharetra, facilisis ante ut, venenatis eros. Integer et 
+	ante at velit sollicitudin dictum ac sed lorem. Nullam tincidunt 
+	acus id tellus pulvinar, sit amet tincidunt sem elementum. 
+	Aenean ut commodo nunc, blandit iaculis diam. Quisque ullamcorper 
+	llamcorper dui ac scelerisque. Suspendisse eget dignissim ligula, 
+	non accumsan leo. Nullam volutpat velit vitae ultricies tempus. 
+	Pellentesque vehicula arcu sed nulla mattis, nec blandit ligula 
+	suscipit."
 		},
 		{
 			"company" : "Nice",
 			"city" : "Nice World",
 			"role" : "being nice",
 			"years" : "July 2009 - - - july 2011"
+			"description" : "Lorem ipsum dolor sit amet, consectetur 
+	adipiscing elit. Cras feugiat eget elit at viverra. Pellentesque 
+	non mi facilisis, luctus purus sed, gravida quam. Mauris vel 
+	tortor pharetra, facilisis ante ut, venenatis eros. Integer et 
+	ante at velit sollicitudin dictum ac sed lorem. Nullam tincidunt 
+	acus id tellus pulvinar, sit amet tincidunt sem elementum. 
+	Aenean ut commodo nunc, blandit iaculis diam. Quisque ullamcorper 
+	llamcorper dui ac scelerisque. Suspendisse eget dignissim ligula, 
+	non accumsan leo. Nullam volutpat velit vitae ultricies tempus. 
+	Pellentesque vehicula arcu sed nulla mattis, nec blandit ligula 
+	suscipit."
 		}
 	]
 };
