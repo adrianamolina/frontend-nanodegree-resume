@@ -5,14 +5,21 @@ var bio = {
 	"contactInfo" : "adriana@blabla.com",
 	"skills" : ["nubes", "arcoiris", "caballo", "pradera"]
 };
-// mal porque añade primero "%dat%" y luego ya el replace con el nombre
+// mal porque añade primero "%data%" y luego ya el replace con el nombre
 //$("#header").append(HTMLheaderName);
 	var formattedName = HTMLheaderName.replace ("%data%", bio.name);
 	$("#header").append(formattedName);
 // lo mismo que con el nombre $("#header").append(HTMLheaderRole);
 	var formattedRole = HTMLheaderRole.replace ("%data%", bio.role);
 	$("#header").append(formattedRole);
+
 $("#main").append(internationalizeButton);
+
+function inName() {
+	var nameBefore = bio.name.split(" ");
+	nameBefore = nameBefore[0] + " " + nameBefore[1].toUpperCase();
+	return nameBefore;
+}
 
 
 var education = {
