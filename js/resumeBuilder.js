@@ -1,10 +1,18 @@
 	
 var bio = {
-	"name" : "Adriana" ,
+	"name" : "Adriana Poulain" ,
 	"role" : "Frontend" ,
 	"contactInfo" : "adriana@blabla.com",
 	"skills" : ["nubes", "arcoiris", "caballo", "pradera"]
 };
+// mal porque añade primero "%dat%" y luego ya el replace con el nombre
+//$("#header").append(HTMLheaderName);
+	var formattedName = HTMLheaderName.replace ("%data%", bio.name);
+	$("#header").append(formattedName);
+// lo mismo que con el nombre $("#header").append(HTMLheaderRole);
+	var formattedRole = HTMLheaderRole.replace ("%data%", bio.role);
+	$("#header").append(formattedRole);
+$("#main").append(internationalizeButton);
 
 
 var education = {
