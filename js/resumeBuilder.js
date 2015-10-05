@@ -124,15 +124,18 @@ var projects = {
 projects.display = function () {
 	for(p in projects.DIY) {
 		$("#projects").append(HTMLprojectStart);
-		var formattedTitle = HTMLprojectTitle.replace ("%data%", 
+		var formattedTitle = HTMLprojectTitle.replace("%data%", 
 			projects.DIY[p].objects);
 		$(".project-entry:last").append(formattedTitle);
-		var formattedDates = HTMLprojectDates.replace ("%data%",
+		var formattedDates = HTMLprojectDates.replace("%data%",
 			projects.DIY[p].materials);
 		$(".project-entry:last").append(formattedDates);
 		var formattedDescription = HTMLprojectDescription.replace 
 			("%data%", projects.DIY[p].tools);
 		$(".project-entry:last").append(formattedDescription);
+		var formattedImage = HTMLprojectImage.replace("%data%",
+			"http://lorempixel.com/400/200");
+		$(".project-entry:last").append(formattedImage);
 	}
 }
 projects.display();
